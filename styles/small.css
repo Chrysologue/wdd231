@@ -1,0 +1,138 @@
+:root {
+    --first-color: #397367;
+    --second-color: #A3320B;
+    --third-color: #85C7DE;
+    --fourth-color: #DDBEA8;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	line-height: 1.7;
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+header img {
+	width: 80px;
+	height: auto;
+	border-radius: 5px;
+}
+.top-menu {
+	background-color: var(--first-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: .8rem 0;
+	color: #ffffff;
+	gap: 1rem;
+}
+#menu::before {
+	content: "≡";
+}
+#menu {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 30px;
+}
+.nav-menu {
+	background-color: var(--fourth-color);
+	display: none;
+	flex-direction: column;
+	align-items: center;
+}
+.nav-menu a {
+	text-decoration: none;
+	color: #000000; 
+}
+.nav-menu a:hover {
+	font-weight: 700;
+}
+.home-section {
+	padding: .8rem 1rem;
+	background-color: #dadada;
+}
+.section-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+
+.home-section h1  {
+	font-size: 18px;
+	color: var(--first-color);
+}
+.small-head {
+	font-size: 16px;
+	background-color: var(--second-color);
+	border-radius: 2px;
+	color: #ffffff;
+	text-align: center;
+	padding: .8rem .2rem;
+	margin: 0;
+}
+figure img {
+	display: block;
+	width: 160px;
+	height: auto;
+	margin: 0 auto;
+}
+figure figcaption {
+	font-size: 13px;
+	text-align: center;
+}
+.butt-container {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 1rem;
+	padding:.5rem;
+	border-bottom: 2px solid #d6d6d6;
+}
+.butt-container button {
+	min-width: 100px;
+	background-color: var(--third-color);
+	color: #231f1f;
+	border: none;
+	padding: .3rem 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+footer {
+	background-color: var(--first-color);
+	padding: .8rem 1rem;
+	color: #ffffff;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1;
+}
+.show {
+	display: flex;
+}
+.show#menu::before {
+	content: "X";
+}
+.course-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	padding: 0 .5rem;
+}
+.course-container button {
+	padding: .5rem;
+	border: none;
+	border-radius: 3px;
+}
+button {
+	font-family: 'Poppins';
+	font-weight: 700;
+	font-size: 14px;
+}
+.total-credits {
+	padding: .5rem;
+}
+a.active {
+	background-color: var(--third-color);
+	padding: .3rem .8rem;
+	border-radius: 5px;
+}

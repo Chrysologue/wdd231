@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD231 - Web Frontend Development I, Course Home Page">
+    <meta name="author" content="Xyste Chrysologue">
+    <title>Course Home Page</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Chrysologue</h1>
+    <header>
+		<div class="top-menu">
+			<img src="images/profile.jpg" alt="profile-photo">
+		<span>R. Chrysologue</span>
+		<a href="#" id="menu"></a>
+		</div>
+		<nav class="nav-menu">
+			<a href="index.html">Home</a>
+			<a href="chamber.html">Chamber</a>
+			<a href="https://github.com/">GitHub Profile</a>
+			<a href="https://www.linkedin.com/">LinkedIn</a>
+		</nav>
+	</header>
+	<main class="home-section">
+		<h1>Home</h1>
+		<div class="section-container">
+			<section>
+				<h2 class="small-head">Course Work</h2>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</section>
+			<section>
+				<h2 class="small-head">Mahajanga, Madagascar</h2>
+				<figure>
+					<img src="images/fosa-mad.webp" alt="Fosa">
+					<figcaption>Fosa / Madagascar<figcaption>
+				</figure>
+				
+			</section>
+			<section id="course">
+				<h2 class="small-head">Web and Computer Programming Certificate</h2>
+				<div class="butt-container">
+					<button type="button">ALL</button>
+					<button type="button">CSE</button>
+					<button type="button">WDD</button>
+				</div>
+				<div class="course-container"></div>
+				<div class="total-credits"></div>
+			</section>
+		<div>
+	</main>
+	<footer>
+		<p>&copy; <span id="currentyear"></span> 🌷James Carravalho, Madagascar🌷</p>
+		<p id="lastModified"></p>
+	</footer>
 </body>
 </html>
