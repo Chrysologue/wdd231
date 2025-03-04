@@ -90,12 +90,12 @@ function displayCourses(array)
 		sub.textContent = `${array[x].subject} ${array[x].number}`;
 		if (array[x].completed == true)
 		{
-			sub.style.backgroundColor = "#3B1C32";
-			sub.style.color = "#f7f7f7";
+			sub.style.backgroundColor = "#240115";
+			sub.style.color = "#e0e0e0";
 		}
 		else {
-			sub.style.backgroundColor = "#a89f9f";
-			sub.style.color = "#121111";
+			sub.style.backgroundColor = "#B9D2B1";
+			sub.style.color = "#050505";
 		}
 		courseContainer.appendChild(sub);
 	}
