@@ -1,6 +1,7 @@
 :root {
     --primary-color: #1E555C;
-    --secondary-color: #A18276;
+    --secondary-color: #291711;
+    --tertiary-color: #581F18;
     --background-color: #F1F2EE;
     --text-color: #000;
     --primary-font: "Work Sans", sans-serif;
@@ -58,11 +59,37 @@ header span {
 main {
     padding: 2rem 1rem;
 }
-.cards {
+main h2 {
+    margin-bottom: 1rem;
+}
+.cards, .cards.grid-view {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
 }
+
+.cards.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cards.list-view div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--tertiary-color);
+    color: #fff;
+}
+.cards.list-view p {
+    margin: 10px 0;
+}
+
+.cards.list-view a {
+    color: #1affd1;
+    text-decoration: underline;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -76,12 +103,12 @@ footer {
 
 footer {
     display: grid;
-    grid-template-columns: 1fr;  /* Single column layout for mobile */
+    grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
     background-color: #333;
     color: white;
-    text-align: center;  /* Center the content on mobile */
+    text-align: center; 
     font-size: 0.9rem;
 }
 
@@ -110,4 +137,31 @@ footer img:hover {
 
 #about-me p {
     margin: 5px 0;
+}
+.cards div {
+    box-shadow: 8px 3px 8px rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+    transition: transform .3s ease-in-out;
+}
+.cards div:hover {
+    transform: scale(1.02);
+}
+.active {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+.button {
+    margin-bottom: 2rem;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.button button {
+    padding: .3rem 1rem;
+    display: block;
+    border-radius: 3px;
+    cursor: pointer;
 }
