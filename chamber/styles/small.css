@@ -226,14 +226,14 @@ footer img:hover {
 
 .card-item {
     display: flex;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 10px;
+    padding: .5rem;
     align-items: start;
     flex-wrap: wrap;
 }
 .card-logo {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border: 2px solid rgb(149, 149, 149);
     box-shadow: 5px 5px 6px rgba(0, 0, 0, .3);
 }
@@ -241,13 +241,14 @@ footer img:hover {
 .company-spotlight {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 10px;
 }
 
 .company-spotlight > div {
     border: 1px solid rgb(152, 152, 152);
     border-radius: 10px;
     background-color: #d9d9d9;
+    width: 100%;
 }
 .company-spotlight p, .company-spotlight a {
     font-size: 12px;
