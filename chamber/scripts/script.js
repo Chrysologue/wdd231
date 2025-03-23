@@ -1,29 +1,3 @@
-const navButton = document.getElementById('myButton');
-const navElement = document.getElementById('myLinks')
-navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navElement.classList.toggle('show')
-});
-const lastModified = document.getElementById('lastmodified');
-const currentYear = document.getElementById('current-year');
-const date = new Date();
-currentYear.textContent = date.getFullYear();
-lastModified.textContent = `Last Modification: ${document.lastModified}`
-
-const path = window.location.pathname.split("/").pop();
-const links = document.querySelectorAll('#myLinks a');
-links.forEach(link => {
-    if (link.getAttribute('href') === path)
-    {
-        link.classList.add('active');
-    }
-    else {
-        link.classList.remove('active');
-    }
-});
-
-
-
 async function getData(view) {
     const request = new Request("./data/members.json");
     const response = await fetch(request);

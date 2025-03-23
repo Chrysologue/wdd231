@@ -5,7 +5,10 @@
     --background-color: #F1F2EE;
     --text-color: #000;
     --primary-font: "Work Sans", sans-serif;
-    --secondary-font: "Young Serif", serif;
+    --secondary-font: "Bebas Neue", sans-serif;
+}
+* {
+    box-sizing: border-box;
 }
 body {
     font-family: var(--primary-font);
@@ -38,7 +41,7 @@ header span {
     flex-direction: column;
 }
 #myLinks a {
-    display: block;
+    display: flex;
     padding: 1rem 2vw;
     border-top: 2px solid rgb(208, 208, 208);
 }
@@ -152,6 +155,9 @@ footer img:hover {
     background-color: var(--secondary-color);
     color: #ffffff;
 }
+.active::before {
+    content: "📍";
+}
 .button {
     margin-bottom: 2rem;
 }
@@ -166,4 +172,126 @@ footer img:hover {
     display: block;
     border-radius: 3px;
     cursor: pointer;
+}
+
+/* Home section */
+#hero {
+    background-image: url('../images/chamber-hero.jpg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 3rem;
+}
+.hero-section {
+    text-align: left;
+    padding: .5rem;
+    max-width: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+}
+.hero-section h2 {
+    color: #000000;
+    font-size: 40px;
+    margin: 0;
+    font-family: var(--secondary-font);
+}
+.hero-section p {
+    color: #000;  
+}
+.hero-section a {
+    background-color: var(--background-color);
+    color: #000;
+    padding: .6rem;
+    font-weight: bold;
+    min-width: 160px;
+    font-size: 14px;
+    text-align: center;
+}
+.hero-section a:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+/* Company spotlight */
+.section {
+    padding: 1rem;
+}
+
+.card-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.card-logo {
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(149, 149, 149);
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, .3);
+}
+
+.company-spotlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.company-spotlight > div {
+    border: 1px solid rgb(152, 152, 152);
+    border-radius: 10px;
+    background-color: #d9d9d9;
+}
+.company-spotlight p, .company-spotlight a {
+    font-size: 12px;
+}
+.company-spotlight h2 {
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid rgb(138, 138, 138);
+    margin-bottom: .5rem;
+    padding: .5rem;
+}
+
+.events-weather {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%; 
+    max-width: 100%;
+    height: auto;
+}
+.events-weather h2 {
+    background-color: rgb(35, 34, 34);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.current-weather .weather-card {
+    display: flex;
+    align-items: flex-start;
+    padding: .5rem;
+    gap: 1rem;
+    font-size: 14px;
+    height: auto;
+    flex-wrap: wrap;
+}
+.same-bg {
+    background-color: #c9c9c9;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    
+}
+.weather-forecast .forecast {
+    padding: .5rem 1rem;
+    font-size: 14px;
 }

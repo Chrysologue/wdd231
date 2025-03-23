@@ -4,16 +4,16 @@
             "name": "Ovy Gasy",
             "address": "Lot 215B Ankiabe-Salohy",
             "phone_number": "+261 33 256 89",
-            "website_url": "#",
+            "website_url": "voly-malagasy.com",
             "image_file": "./images/potatoes-field.webp",
-            "membership_level": "member"
+            "membership_level": "silver"
         },
         {
             "name": "Omby Vavy Be Ronono",
             "address": "Mahatsara 425",
             
             "phone_number": "+261 38 44 256 98",
-            "website_url": "#",
+            "website_url": "OmbyTsara.mg",
             "image_file": "./images/farm-omby.webp",
             "membership_level": "silver"
         },
@@ -21,7 +21,7 @@
             "name": "Vary Gasy Mahasoa",
             "address": "Rue Jiory 257 Mevarano",
             "phone_number": "+261 32 45 598 60",
-            "website_url": "#",
+            "website_url": "mambolyvoky.mg",
             "image_file": "./images/flour-planting.webp",
             "membership_level": "silver"
         },
@@ -29,7 +29,7 @@
             "name": "Lamba Soa",
             "address": "Lot 125 BV Ankasina",
             "phone_number": "+261 34 11 256 48",
-            "website_url": "#",
+            "website_url": "soa-lambagasy.com",
             "image_file": "./images/zaitra-firm.webp",
             "membership_level": "gold"
         },
@@ -37,7 +37,7 @@
             "name": "Tongolo Gasy",
             "address": "Mahatsinjo Lot 216 RS",
             "phone_number": "+261 33 15 587 15",
-            "website_url": "#",
+            "website_url": "tgmga.org",
             "image_file": "./images/tongolo-gasy.webp",
             "membership_level": "silver"
 
@@ -46,7 +46,7 @@
             "name": "Zaika Tonga Vola",
             "address": "Ambilomavo Bef/Nord",
             "phone_number": "+261 37 14 568 52",
-            "website_url": "#",
+            "website_url": "tambatra-zaika.mg",
             "image_file": "./images/zaika-be.webp",
             "membership_level": "member"
         },
@@ -54,7 +54,7 @@
             "name": "Jono Hazandrano",
             "address": "Anjalazala RN 32",
             "phone_number": "+261 33 42 165 48",
-            "website_url": "#",
+            "website_url": "andrano-mihaza.org",
             "image_file": "./images/drakaka.webp",
             "membership_level": "gold"
         }
