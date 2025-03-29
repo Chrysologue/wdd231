@@ -77,6 +77,8 @@ const courses = [
         completed: false
     }
 ]
+
+
 const totalCreditsContainer = document.querySelector('.total-credits');
 const courseContainer = document.querySelector('.course-container');
 function displayCourses(array)
@@ -84,23 +86,46 @@ function displayCourses(array)
 	courseContainer.textContent = "";
 	let totalCredits = array.reduce((sum, course) => sum + course.credits, 0);
     totalCreditsContainer.textContent = `Total Credits: ${totalCredits}`;
-	for(let x = 0; x < array.length; x++)
-	{
-		const sub = document.createElement('button');
-		sub.textContent = `${array[x].subject} ${array[x].number}`;
-		if (array[x].completed == true)
-		{
-			sub.style.backgroundColor = "#240115";
+
+    array.forEach(element => {
+        const sub = document.createElement('button');
+        sub.textContent = `${element.subject} ${element.number}`;
+        if (element.completed == true)
+        {
+            sub.style.backgroundColor = "#240115";
 			sub.style.color = "#e0e0e0";
-		}
-		else {
-			sub.style.backgroundColor = "#B9D2B1";
-			sub.style.color = "#050505";
-		}
-		courseContainer.appendChild(sub);
-	}
+        }
+        else {
+            sub.style.backgroundColor = "#B9D2B1";
+            sub.style.color = "#050505";
+            
+        }
+        sub.addEventListener('click', () => displayModal(element));
+        courseContainer.appendChild(sub);
+    });
 }
 displayCourses(courses);
+
+const myDialog = document.querySelector('#couse-details');
+
+function displayModal(element)
+{
+    myDialog.innerHTML = '';
+    myDialog.innerHTML = `
+    <button id="closeBtn">❌</button>
+    <h2>${element.subject} ${element.number}</h2>
+    <h3>${element.title}</h3>
+    <p><strong>Credits</strong>: ${element.credits}</p>
+    <p><strong>Certificate</strong>: ${element.certificate}</p>
+    <p>${element.description}</p>
+    <p><strong>Techologies</strong>: ${element.technology.join(', ')}
+    `;
+    myDialog.showModal();
+
+    closeBtn.addEventListener('click', () => {
+        myDialog.close();
+    })
+}
 
 const buttons = document.querySelectorAll('.butt-container button');
 buttons.forEach(butt => {
