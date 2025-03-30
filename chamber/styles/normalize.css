@@ -15,10 +15,6 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-ol,
-ul {
-  list-style: none;
-}
 
 button,
 input,
@@ -36,13 +32,5 @@ img,
 video {
   max-width: 100%;
   height: auto;
-}
-input,
-button,
-select,
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
