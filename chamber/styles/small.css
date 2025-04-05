@@ -506,7 +506,6 @@ button[type=submit]
 .discovery-secton > div > figure >img {
     width: 100%;
     height: auto;
-    object-fit: cover;
 }
 .discovery-secton > div > p {
     font-size: 14px;

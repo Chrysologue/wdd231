@@ -41,6 +41,18 @@ function populateCard(data)
         
         button.style.cursor = 'pointer';
 
+        para.style.display = 'none'
+        button.addEventListener('click', () => {
+            if (para.style.display == 'none')
+            {
+                para.style.display = 'block';
+                button.textContent = 'Show Less';
+            }
+            else {
+                para.style.display = 'none',
+                button.textContent = 'Learn More';
+            }
+        })
         button.textContent = "Learn More.."
 
         card.appendChild(h2);

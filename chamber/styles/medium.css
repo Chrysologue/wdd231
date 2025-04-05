@@ -2,6 +2,7 @@
 {
     .discovery-secton > div {
         column-gap: 2rem;
+        grid-template-columns:  1fr 320px;
         grid-template-areas: 
         'image name'
         'image address'
@@ -9,10 +10,10 @@
         'image para'
         ;}
         .discovery-secton > div > h2 {
-            margin:  .5rem 0;
+            margin:  0;
         }
         .discovery-secton > div > address {
-            margin: .5rem 0;
+            margin: 0;
         }
         .discovery-secton > div > figure  {
             min-width: 100%;
@@ -25,11 +26,14 @@
             text-align: left;
         }
         .discovery-secton > div > figure > img {
-            transition: opacity .3s ease, border-radius .3s ease, box-shadow .3s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            opacity: .8;
+            transition: opacity .3s ease, border-radius .3s ease;
         }
         .discovery-secton > div > figure > img:hover {
-            opacity: .7;
+            opacity: 1;
             border-radius: 8px;
-            box-shadow: 5px 0 5px rgba(0, 0, 0, .5);
         }
 }

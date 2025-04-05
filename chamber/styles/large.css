@@ -93,6 +93,7 @@
     }
     .discovery-secton > div > figure  {
         width: 100%;
+        display: block;
     }
     .discovery-secton > div > figure >img {
         width: 100%;
