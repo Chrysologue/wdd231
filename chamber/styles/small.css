@@ -461,3 +461,68 @@ button[type=submit]
     padding: 1rem;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
 }
+/*Discover page*/
+
+.discover-main {
+    padding: 1rem;
+}
+.discovery-secton {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.discovery-secton > div {
+    border: 2px solid rgb(232, 224, 224);
+    box-shadow: 6px 8px 12px rgba(0, 0, 0, .5);
+    transition: transform .5s ease;
+    border-radius: 8px;
+    display: grid;
+    grid-template-areas: 
+    'image'
+    'name'
+    'address'
+    'para'
+    'button'
+    ;}
+    .discovery-secton > div:hover {
+        transform: scale(1.05);
+        }
+.discovery-secton > div > h2 {
+    font-size:  18px;
+    grid-area: name;
+    margin: 0 .5rem;
+    text-align: center;
+}
+.discovery-secton > div > address {
+    font-size: 14px;
+    grid-area: address;
+    margin: 0 .5rem;
+    text-align: center;
+}
+.discovery-secton > div > figure  {
+    width: 100%;
+    grid-area: image;
+}
+.discovery-secton > div > figure >img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.discovery-secton > div > p {
+    font-size: 14px;
+    grid-area: para;
+    margin:  .5rem;
+    text-align: center;
+}
+.discovery-secton > div > button {
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: .5rem;
+    grid-area: button;
+}
+.discovery-secton > div > button:hover {
+    background-color: #19b0c4;
+    color: #000;
+    font-weight: 700;
+}

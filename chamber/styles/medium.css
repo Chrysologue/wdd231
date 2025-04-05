@@ -1,0 +1,35 @@
+@media screen and (min-width:  641px)
+{
+    .discovery-secton > div {
+        column-gap: 2rem;
+        grid-template-areas: 
+        'image name'
+        'image address'
+        'image button'
+        'image para'
+        ;}
+        .discovery-secton > div > h2 {
+            margin:  .5rem 0;
+        }
+        .discovery-secton > div > address {
+            margin: .5rem 0;
+        }
+        .discovery-secton > div > figure  {
+            min-width: 100%;
+        }
+        .discovery-secton > div > button {
+            padding: .3rem;
+            height: auto;
+        }
+        .discovery-secton > div > p {
+            text-align: left;
+        }
+        .discovery-secton > div > figure > img {
+            transition: transform .3s ease, border-radius .3s ease, box-shadow .3s ease;
+        }
+        .discovery-secton > div > figure > img:hover {
+            transform: scale(1.02);
+            border-radius: 8px;
+            box-shadow: 5px 0 5px rgba(0, 0, 0, .5);
+        }
+}
