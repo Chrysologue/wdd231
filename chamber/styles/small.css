@@ -525,3 +525,6 @@ button[type=submit]
     color: #000;
     font-weight: 700;
 }
+#visitor-message {
+    margin-bottom: 1.5rem;
+}
