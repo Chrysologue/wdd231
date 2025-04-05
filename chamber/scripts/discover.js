@@ -18,7 +18,7 @@ async function getInfo() {
 }
 getInfo()
 
-const section = document.querySelector('section');
+const section = document.querySelector(".discovery-secton");
 
 function populateCard(data)
 {

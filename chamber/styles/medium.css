@@ -25,10 +25,10 @@
             text-align: left;
         }
         .discovery-secton > div > figure > img {
-            transition: transform .3s ease, border-radius .3s ease, box-shadow .3s ease;
+            transition: opacity .3s ease, border-radius .3s ease, box-shadow .3s ease;
         }
         .discovery-secton > div > figure > img:hover {
-            transform: scale(1.02);
+            opacity: .7;
             border-radius: 8px;
             box-shadow: 5px 0 5px rgba(0, 0, 0, .5);
         }
