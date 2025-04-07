@@ -1,3 +1,4 @@
+
 const request = new Request("./data/discover.json");
 async function getInfo() {
     try{
@@ -70,7 +71,7 @@ function getDaysBetweenDates(lastVisitDate) {
     const currentDate = new Date();
     const lastVisit = new Date(lastVisitDate);
     const timeDifference = currentDate - lastVisit;
-    return Math.floor(timeDifference / (1000 * 3600 * 24)); s
+    return Math.floor(timeDifference / (1000 * 3600 * 24)); 
 }
 
 
