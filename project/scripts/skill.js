@@ -16,6 +16,7 @@ async function fetchData() {
 fetchData();
 
 const skillContainer = document.querySelector('.skill-container');
+
 function poplateSkill(newData) {
   newData.forEach((data) => {
     const holder = document.createElement('div');
@@ -35,7 +36,10 @@ function poplateSkill(newData) {
   });
 }
 
+
+//Localstorage
 const message = document.querySelector('.greeting');
+
 
 function getDateDifference(lastVisiteDate) {
   const currentDate = new Date();
@@ -67,6 +71,9 @@ getDisplay();
 
 
 
+
+
+//ES Modules
 import { projects } from './projects.js';
 
 function getThreeRandomProject(projects) {
@@ -89,8 +96,10 @@ function createThreeProjectButtons() {
     const projectCard = document.createElement('div');
     projectCard.setAttribute('id', 'three-overview'); 
         projectCard.innerHTML = `
-      <button class="showBtn" type="button">Loading...</button>
-    `;
+      <button class="showBtn" type="button">Loading...</button> 
+    `; 
+    //showBtn
+
     container.appendChild(projectCard);
   }
 }
@@ -102,6 +111,8 @@ function updateProjectButtons(projects) {
     if (buttons[index]) {
       buttons[index].textContent = project.title;
       buttons[index].addEventListener('click', () => {
+
+        //function to show modal
         showProjectModal(project)
       })
     }
@@ -111,6 +122,8 @@ const dialog = document.querySelector('.project-dialog');
 const title = dialog.querySelector('h2');
 const desc = dialog.querySelector('.description');
 const tech = dialog.querySelector('.techonology');
+
+
 function showProjectModal(project)
 {
   dialog.showModal();
