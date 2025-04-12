@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Xyste Chrysologue Rabearson">
+    <meta name="description" content="Get in touch with Xyste Chrysologue Rabearson, a web development student at BYU-Idaho. Use the contact form to ask questions, collaborate on projects, or explore opportunities.">
+
+    <title>Contact Me | Xyste Chrysologue Rabearson - Web Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project-small.css">
+    <link rel="stylesheet" href="styles/project-medium.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/about.js" defer></script>
+  </head>
+  <body>
+    <!--Header of my Webpage-->
+    <header>
+      <div class="logo">
+        <img src="images/my-profile.webp" alt="My Profile" loading="lazy">
+        <span>Chrysologue</span>
+      </div>
+      <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="#" id="menu"></a>
+    </header>
+
+    <!-- Main of the Webpage -->
+    <main class="contact-main">
+      <h1 class="greet">Let's Get in Touch!</h1>
+      <p class="greet">
+        Have a question or want to work together? Feel free to reach out!
+      </p>
+      <form action="thank-you.html" method="GET">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name" required autocomplete="given-name">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required autocomplete="family-name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required autocapitalize="off"
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+    <!-- Footer  of my Webpage-->
+    <footer>
+      <div class="social-links">
+        <a href="https://github.com/your-github" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://twitter.com/your-twitter" target="_blank">Twitter</a>
+      </div>
+      <div class="copy-right">
+        <p>
+          &copy; <span id="current-year"></span>. Chrysologue All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

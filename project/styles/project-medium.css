@@ -1,0 +1,117 @@
+@media screen and (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+  #navLinks {
+    position: relative;
+    background-color: transparent;
+    backdrop-filter: none;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transform: none;
+    transition: none;
+  }
+  #navLinks.show {
+    transform: none;
+    background-color: transparent;
+  }
+  #navLinks a {
+    display: inline-block;
+    padding: 0 1rem;
+  }
+  .logo {
+    margin-left: 0;
+  }
+  header {
+    padding: 1.1rem 0.7rem;
+  }
+  .hero-content {
+    width: 700px;
+  }
+  .hero-content h1 {
+    font-size: 40px;
+  }
+  footer .social-links {
+    gap: 1rem;
+  }
+  #skills h2 {
+    font-size: 2rem;
+  }
+  .skill-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #project-overview {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
+  /*About Page*/
+  #about-me-page {
+    grid-template-areas:
+      'about-me about-me'
+      'journey goals'
+      'current-focus personal-touch'
+      'call-to-action call-to-action';
+    gap: 1rem;
+    justify-content: center;
+
+    margin: auto;
+  }
+
+  .about-section {
+    max-width: 100%;
+  }
+
+  /*Contact Page*/
+  .contact-main form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .contact-main input,
+  .contact-main textarea,
+  .contact-main button {
+    font-size: 1.1rem;
+  }
+
+  .contact-main button {
+    padding: 14px;
+    font-size: 1.1rem;
+  }
+  h1.greet {
+    margin-top: 1.5rem;
+    font-size: 2.2rem;
+  }
+  /*Portfolio Page*/
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*Thank you*/
+  #thankyou {
+    padding: 2rem;
+    box-shadow: 5px 0 8px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+  }
+  #thankyou  h1 {
+    font-size: 1.6rem;
+  }
+  #thankyou p{
+    font-size: 15px;
+    
+  }
+  #thankyou  h1 + p {
+    font-size: 16px;
+  }
+}

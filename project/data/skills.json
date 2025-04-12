@@ -1,0 +1,53 @@
+{
+  "skills": [
+    {
+      "name": "HTML",
+      "id": "html",
+      "value": 90,
+      "max": 100,
+      "ariaLabel": "HTML skill level 90%"
+    },
+    {
+      "name": "CSS",
+      "id": "css",
+      "value": 80,
+      "max": 100,
+      "ariaLabel": "CSS skill level 80%"
+    },
+    {
+      "name": "JavaScript",
+      "id": "javascript",
+      "value": 80,
+      "max": 100,
+      "ariaLabel": "JavaScript skill level 80%"
+    },
+    {
+      "name": "Responsive Design",
+      "id": "responsive",
+      "value": 80,
+      "max": 100,
+      "ariaLabel": "Responsive Design skill level 80%"
+    },
+    {
+      "name": "Git & GitHub",
+      "id": "git-github",
+      "value": 80,
+      "max": 100,
+      "ariaLabel": "Git & GitHub skill level 80%"
+    },
+    {
+      "name": "Node.js",
+      "id": "node-js",
+      "value": 30,
+      "max": 100,
+      "ariaLabel": "Node.js skill level 30%"
+    },
+    {
+      "name": "Tailwind",
+      "id": "tailwind",
+      "value": 30,
+      "max": 100,
+      "ariaLabel": "Tailwind skill level 30%"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Xyste Chrysologue Rabearson">
+    <meta name="description" content="Browse the web development projects of Xyste Chrysologue Rabearson. This portfolio showcases beginner to intermediate HTML, CSS, and JavaScript projects built as part of his journey at BYU-Idaho.">
+
+    <title>Portfolio | Xyste Chrysologue Rabearson - Front-End Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project-small.css">
+    <link rel="stylesheet" href="styles/project-medium.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/main.js" type="module"></script>
+  </head>
+  <body>
+    <!--Header of my Webpage-->
+    <header>
+      <div class="logo">
+        <img src="images/my-profile.webp" alt="My Profile" loading="lazy">
+        <span>Chrysologue</span>
+      </div>
+      <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="#" id="menu"></a>
+    </header>
+
+    <!-- Main of the Webpage -->
+    <main class="portfolio">
+      <section class="portfolio-section">
+        <div class="p-container">
+          <h2 class="section-title">Projects</h2>
+
+          <div class="portfolio-grid" id="portfolio-container"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer  of my Webpage-->
+    <footer>
+      <div class="social-links">
+        <a href="https://github.com/your-github" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://twitter.com/your-twitter" target="_blank">Twitter</a>
+      </div>
+      <div class="copy-right">
+        <p>
+          &copy; <span id="current-year"></span>. Chrysologue All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

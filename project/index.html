@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Xyste Chrysologue Rabearson">
+    <meta name="description" content="A portfolio website showcasing beginner web development projects and progress in HTML, CSS, and JavaScript. Designed with responsive principles and a user-friendly layout to share the journey of an aspiring web developer.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Xyste Chrysologue Rabearson - Front-End Web Developer">
+    <meta property="og:description" content="Explore the portfolio of Xyste Chrysologue, a frontend developer passionate about clean, responsive websites.">
+    <meta property="og:image" content="https://your-domain.com/images/preview-image.webp">
+    <meta property="og:url" content="https://your-domain.com/">
+    <title>Home | Xyste Chrysologue Rabearson - Front-End Web Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project-small.css">
+    <link rel="stylesheet" href="styles/project-medium.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/skill.js" type="module"></script>
+  </head>
+  <body>
+    <!--Header of my Webpage-->
+    <header>
+      <div class="logo">
+        <img src="images/my-profile.webp" alt="My Profile" loading="lazy">
+        <span>Chrysologue</span>
+      </div>
+      <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="#" id="menu"></a>
+    </header>
+    <!-- Main of the Webpage -->
+    <div id="hero">
+      <div class="greeting"></div>
+      <div class="hero-content">
+        <h2>HI, I'M CHRYSOLOGUE</h2>
+        <p class="introduce">
+          I am a frontend deveolper, passionate about crafting clean, responsive
+          websites using HTML, CSS, and JavaScript. Currently, I’m focused on
+          mastering the fundamentals to create beautiful, functional user
+          experiences. Explore my work as I continue to grow and sharpen my
+          skills in frontend development.
+        </p>
+        <a href="portfolio.html" class="cta-button butt1"
+          >Explore My Projects</a
+        >
+        <a href="contact.html" class="cta-button butt2">Contact Me</a>
+      </div>
+    </div>
+    <div id="skills">
+      <h2>Skills & Technologies</h2>
+      <div class="skill-container"></div>
+    </div>
+    <div id="project-overview"></div>
+    <dialog class="project-dialog">
+      <h2>Default</h2>
+      <p class="description"></p>
+      <p class="techonology"></p>
+      <button class="closeBtn" type="button">X</button>
+    </dialog>
+
+    <!-- Footer  of my Webpage-->
+    <footer>
+      <div class="social-links">
+        <a href="https://github.com/your-github" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://twitter.com/your-twitter" target="_blank">Twitter</a>
+      </div>
+      <div class="copy-right">
+        <p>
+          &copy; <span id="current-year"></span>. Chrysologue All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
