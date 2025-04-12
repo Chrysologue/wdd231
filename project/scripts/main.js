@@ -14,7 +14,7 @@ function getProjectDetails() {
       <p>${project.technologies.join(', ')}</p>
     </div>
     <img src="${project.image}" alt="${project.title}" loading="lazy">
-    <a href="${project.link}">Link to Project</a>
+    <a href="${project.link}" target="_blank">Link to Project</a>
     `;
     container.appendChild(portfolioCard);
   });
