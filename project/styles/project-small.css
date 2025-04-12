@@ -253,6 +253,9 @@ progress::-webkit-progress-bar {
   flex-direction: column;
   
 }
+.my-projects {
+  margin: 1rem 0;
+}
 .my-projects h2 {
   text-align: center;
   font-size: 32px;
@@ -338,7 +341,7 @@ progress::-webkit-progress-bar {
   padding: 2rem;
   margin: 1rem 0;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+  box-shadow: 0 4px 8px rgba(174, 174, 174, 0.1);
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.6s ease-in-out;
@@ -364,9 +367,8 @@ progress::-webkit-progress-bar {
 }
 
 .call-to-action a {
-  color: #631818;
+  color: #201ea9;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .call-to-action a:hover {
