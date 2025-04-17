@@ -60,7 +60,7 @@ function getDisplay() {
     if (timeDiff < 1) {
       message.textContent = 'Back so soon! Awesome!';
     } else {
-      message.textContent = `You last visited ${timeDiff} ${
+      message.textContent = `Your last visited ${timeDiff} ${
         timeDiff == 1 ? 'day' : 'days'
       } ago.`;
     }
